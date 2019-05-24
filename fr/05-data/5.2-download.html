@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>02-Récupération des données - Procédures  UNF</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "02-R\u00e9cup\u00e9ration des donn\u00e9es";
+    var mkdocs_page_input_path = "fr/05-data/5.2-download.md";
+    var mkdocs_page_url = "/fr/fr/05-data/5.2-download.html";
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../index.html" class="icon icon-home"> Procédures  UNF</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../index.html">Accueil</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Avant votre arrivée</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../01-arrive/1.1-secu.html">01-Sécurité</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../01-arrive/1.2-accounts.html">02-Comptes UNF</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../01-arrive/1.3-ethic.html">03-Éthique</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../02-simulateur/2.1-simulateur.html">Simulateur</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">IRM à l’UNF</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../03-expIRM/3.1-paramIRM.html">01-Paramètres IRM</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../03-expIRM/3.2-stim.html">02-Stimuli expérimentaux</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../03-expIRM/3.3-matosExt.html">03-Matériel extérieur</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../03-expIRM/3.4-resa.html">04-Réservation</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../03-expIRM/3.5-dommage.html">05-Dommage à l’équipement</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Acquisition</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../04-acquisition/4.1-forms.html">01-Formulaires</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../04-acquisition/4.2-implant_form.html">02-Implants</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../04-acquisition/4.3-uniform.html">03-Uniformes</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../04-acquisition/4.4-pregnancy.html">04-Grossesse</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../04-acquisition/4.5-glasses.html">05-Lunettes</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../04-acquisition/4.6-big_day.html">06-Jour J</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../04-acquisition/4.7-coincidental.html">07-Découvertes fortuites</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Téléchargement des données et outils d'analyse</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="5.1-servers.html">01-Serveurs de calcul</a>
+                </li>
+                <li class=" current">
+                    
+    <a class="current" href="5.2-download.html">02-Récupération des données</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#recuperation-et-preparation-des-donnees-de-neuroimagerie">Récupération et préparation des données de neuroimagerie</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#depuis-la-plateforme-de-lunf">Depuis la plateforme de l’UNF</a></li>
+        
+        </ul>
+    
+
+    </ul>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Mesures d’urgences</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../06-emergency/6.1-codes.html">01-Codes d’urgences</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../06-emergency/6.2-medical.html">02-Médicale</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../06-emergency/6.3-fire.html">03-Incendie</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../06-emergency/6.4-quench.html">04-Quench</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../en/index.html">Home</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Before your arrival</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../en/01-arrive/1.1-secu.html">01-Security</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../en/01-arrive/1.2-accounts.html">02-UNF Accounts</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../en/01-arrive/1.3-ethic.html">03-Ethic</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../en/02-simulateur/2.1-simulateur.html">Simulator</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">IRM at the UNF</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../en/03-expIRM/3.1-paramIRM.html">01-IRM Parameters</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../en/03-expIRM/3.2-stim.html">02-Experimental Stimuli</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../en/03-expIRM/3.3-matosExt.html">03-External Material</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../en/03-expIRM/3.4-resa.html">04-Reservation</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../en/03-expIRM/3.5-domage.html">05-Dommage to the equipment</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Acquisition</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../en/04-acquisition/4.1-forms.html">01-Forms</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../en/04-acquisition/4.2-implant_form.html">02-Implants</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../en/04-acquisition/4.3-uniform.html">03-Uniforms</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../en/04-acquisition/4.4-pregnancy.html">04-Pregnancy</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../en/04-acquisition/4.5-glasses.html">05-Glasses</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../en/04-acquisition/4.6-big_day.html">06-The Big Day</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Data recuperation and tools for analysis</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../en/05-data/5.1-servers.html">01-Servers</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../en/05-data/5.2-download.html">02-Download your data</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Emergency Measures</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../en/06-emergency/6.1-codes.html">01-Emergency Codes</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../en/06-emergency/6.2-medical.html">02-Medical</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../en/06-emergency/6.3-fire.html">03-Fire</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../en/06-emergency/6.4-quench.html">04-Quench</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../en/07-quality/7.1-assuQA.html">Quality Guarantee</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../index.html">Procédures  UNF</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Téléchargement des données et outils d'analyse &raquo;</li>
+        
+      
+    
+    <li>02-Récupération des données</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="recuperation-et-preparation-des-donnees-de-neuroimagerie">Récupération et préparation des données de neuroimagerie</h1>
+<h2 id="depuis-la-plateforme-de-lunf">Depuis la plateforme de l’UNF</h2>
+<p>La solution la plus simple et pratique pour la récupération des données de neuroimagerie acquises à l’unité de neuroimagerie fonctionnelle (UNF) est d’utiliser la plateforme mise à disposition sur le site internet de l’UNF.
+Cette plateforme s’occupe de la préparation des données et de leur compression pour un téléchargement et partage simplifié. Tous les scans fait à l'UNF sont archivés en deux copies, une copie sur le serveur web ou vous pouvez récupérer vos images, et une copie sur notre système d'archivage. Les scans sont archivés et accessibles ad vitam æternam. Il n'est donc pas nécessaire pour vous de faire des sauvgardes supplémentaires de vos scans.
+Elle est accessible soit depuis <strong>le site internet de l‘<a href="http://www.unf-montreal.ca">unité de neuroimagerie</a></strong> (Menu <code>Services</code> puis <code>Récupération des données IRM</code>), soit directement depuis <strong>la <a href="https://unf-montreal.ca">plateforme de téléchargement</a></strong>.</p>
+<p><img alt="Page d’accueil de l’UNF" src="../../Pictures/unf_website_home.png" /></p>
+<h3 id="preparation-des-donnees">Préparation des données</h3>
+<ol>
+<li>Connectez-vous à <a href="https://unf-montreal.ca">https://unf-montreal.ca</a></li>
+<li>Entrer votre identifiant et mot de passe de votre compte UNF</li>
+<li>Sélectionner les données à récupérer et cliquer sur <code>Préparer les images</code> (garder le choix par défaut pour la compression des images <code>tar.gz</code>)</li>
+<li>Donner un nom à l’archive à télécharger, pour notre exemple <code>unf-data</code> et cliquer sur <code>Soumettre</code></li>
+</ol>
+<p><img alt="Interface pour télécharger des sessions d’imagerie" src="../../Pictures/unf_get_data.png" /></p>
+<p>Les données seront prêtes à télécharger après quelques instants.
+<strong>Ne fermer pas</strong> votre fenêtre de navigation, nous y reviendrons après.</p>
+<h3 id="telechargement-des-donnees">Téléchargement des données</h3>
+<p>Pendant ce temps, ouvrez un terminal sur votre ordinateur et connectez-vous en ssh à un des serveurs de l’UNF (Magma ou Stark).</p>
+<pre><code class="bash"># Remplacer 'username' par votre identifiant de votre compte UNF
+ssh -Y username@stark.criugm.qc.ca
+</code></pre>
+
+<p>Le serveur vous demandera alors le mot de passe de votre compte UNF.</p>
+<p><img alt="Connexion SSH à Stark" src="../../Pictures/terminal_ssh.png" /></p>
+<p>Une fois connecté, naviguez  dans votre répertoire de données :</p>
+<pre><code class="bash"># Remplacer 'labname' par le nom du laboratoire 
+# Remplacer 'username' par l’identifiant de votre compte UNF
+cd /data/labname/username/
+</code></pre>
+
+<p>Au besoin, créez un nouveau répertoire pour votre projet et déplacez-vous dans ce répertoire :</p>
+<pre><code class="bash"># Remplacer 'project_name' par le nom du projet
+mkdir project_name
+
+# Aller dans le nouveau répertoire
+cd project_name
+</code></pre>
+
+<p>Téléchargement des données préparées par l’UNF :</p>
+<ol>
+<li>Retourner sur la page internet du site internet de l’UNF (si vous avez fermé votre navigateur, le lien est disponible pendant 7 jours dans la section <code>Services/Récupération des données IRM</code>)</li>
+<li>Dans l’encadré en bas à gauche de la fenêtre, vous trouverez le lien (en bleu) des données préparées (le nom donné auparavant, comme 'unf-data.tar.gz'). <strong>Copier le lien préparé par le système (clic droit, <code>Copier le lien</code>/<code>Copy link location</code>)</strong>, dans notre exemple <code>http://downloads.criugm.qc.ca/username/unf-data.tar.gz</code></li>
+<li>Dans le terminal, entrer la commande suivante pour télécharger les données</li>
+</ol>
+<pre><code class="bash"># Taper wget puis un espace et faite un clic droit `Coller` ou control-shift-v
+wget http://downloads.criugm.qc.ca/username/unf-data.tar.gz
+</code></pre>
+
+<p><img alt="Téléchargement des données avec WGET" src="../../Pictures/terminal_wget.png" /></p>
+<p>Vos données sont maintenant prêtes à être converties pour TOAD (<a href="#conversion">voir section '3 Conversion des données'</a>).</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../06-emergency/6.1-codes.html" class="btn btn-neutral float-right" title="01-Codes d’urgences">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="5.1-servers.html" class="btn btn-neutral" title="01-Serveurs de calcul"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+      <p>© UNF 2016</p>
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="5.1-servers.html" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../06-emergency/6.1-codes.html" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+
+</body>
+</html>
