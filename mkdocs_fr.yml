@@ -1,10 +1,11 @@
-site_name: 'Procédures  UNF'
-theme: readthedocs
+site_name: 'Procédures UNF'
+theme:
+  name: readthedocs
+  custom_dir: 'custom_theme'
 site_url: https://doc.unf-montreal.ca/fr
 site_description: 'UNF Procedures'
 docs_dir: src/
 site_dir: html/fr
-theme_dir: 'custom_theme'
 use_directory_urls: false
 copyright: © UNF 2016
 pages:
